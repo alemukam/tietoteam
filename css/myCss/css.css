@@ -1,0 +1,52 @@
+body {
+	margin: 0 0 0 0;
+}
+
+br {
+  margin:2em 0;/* FF for instance */
+  line-height:2.5em;/* chrome for instance */
+}
+
+li {
+	cursor: pointer;
+	transition-property: font-weight;
+	transition-delay: 0.2s;
+}
+
+li:hover {
+	font-weight: bold;
+	background-color: rgb(186, 212, 255);
+}
+
+header {
+	background-color: rgba(255, 255, 255, 0.3);
+	margin-bottom: 10px;
+	display: inline-block;
+	width: 100%;
+}
+
+h1 {
+	text-align: center;
+}
+#div-img {
+	float: left;
+	margin: 10px 20px 0 0;
+	text-align: center;
+}
+
+h4 {
+	font-weight: bold;
+	border-top: solid black 1.5px;
+	border-bottom: solid black 1.5px;
+	padding: 4px 0 4px 0;
+}
+
+#logo {
+	height: 50px;
+	float: left;
+}
+
+#superP {
+	border-bottom: solid black 0.75px;
+	word-wrap: break-word;
+}
