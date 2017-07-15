@@ -13,41 +13,116 @@
 <body>
 <header>
 	<a href="https://www.tieto.com" target="_blank"><img id="logo" src="img/tietologo.png"></a>
-	<a id="game" href="rockpaperscissors.html">Game</a>
 	<h1>Tieto Members of the Leadership Team</h1>
 			
 </header>
-	<div id="mambo" class="container-fluid">
+	<div class="container-fluid">
 		<div class="row">
 			<div class="col-xs-3">
-	<ul class="list-group">
-		<li id="alkiokim" class="list-group-item">Kimmo Alkio</li>
-		<li id="dahlshak" class="list-group-item">Håkan Dahlström</li>
-		<li id="heinolas" class="list-group-item">Lasse Heinonen</li>
-		<li id="johanper" class="list-group-item">Per Johanson</li>
-		<li id="kravikat" class="list-group-item">Katariina Kravi</li>
-	</ul>
-			</div>
 
-			<div id="for-append" class="col-xs-9 bg-success">
-				<div id="div-img">
-					<img id="img" src="">
-					<h4></h4>
-					<p id="superP"></p>
+		<div class="panel-group" id="myPanel">
+			<div class="panel">
+				<div class="panel-heading">
+					<h3 id="alkiokim" class="panel-title" data-toggle="collapse" data-parent="#myPanel" data-target="#panel-1">Kimmo Alkio</h3>
 				</div>
-				<div id="to-append">
-					
+				<div id="panel-1" class="panel-collapse collapse">
+					<div class="panel-body">
+						<p id="alkiokim_profile">Profile</p>
+						<p id="alkiokim_cv">CV</p>
+						<p id="alkiokim_smth">Something else</p>
+					</div>
+				</div>
+			</div>
+			<div class="panel">
+				<div class="panel-heading">
+					<h3 id="dahlshak" class="panel-title" data-toggle="collapse" data-parent="#myPanel" data-target="#panel-2">Håkan Dahlström</h3>
+				</div>
+				<div id="panel-2" class="panel-collapse collapse">
+					<div class="panel-body">
+						<p id="dahlshak_profile">Profile</p>
+						<p id="dahlshak_cv">CV</p>
+						<p id="dahlshak_smth">Something else</p>
+					</div>
+				</div>
+			</div>
+			<div class="panel">
+				<div class="panel-heading">
+					<h3 id="heinolas" class="panel-title" data-toggle="collapse" data-parent="#myPanel" data-target="#panel-3">Lasse Heinonen</h3>
+				</div>
+				<div id="panel-3" class="panel-collapse collapse">
+					<div class="panel-body">
+						<p id="heinolas_profile">Profile</p>
+						<p id="heinolas_cv">CV</p>
+						<p id="heinolas_smth">Something else</p>
+					</div>
+				</div>
+			</div>
+			<div class="panel">
+				<div class="panel-heading">
+					<h3 id="johanper" class="panel-title" data-toggle="collapse" data-parent="#myPanel" data-target="#panel-4">Per Johanson</h3>
+				</div>
+				<div id="panel-4" class="panel-collapse collapse">
+					<div class="panel-body">
+						<p id="johanper_profile">Profile</p>
+						<p id="johanper_cv">CV</p>
+						<p id="johanper_smth">Something else</p>
+					</div>
+				</div>
+			</div>
+			<div class="panel">
+				<div class="panel-heading">
+					<h3 id="kravikat" class="panel-title" data-toggle="collapse" data-parent="#myPanel" data-target="#panel-5">Katariina Kravi</h3>
+				</div>
+				<div id="panel-5" class="panel-collapse collapse">
+					<div class="panel-body">
+						<p id="kravikat_profile">Profile</p>
+						<p id="kravikat_cv">CV</p>
+						<p id="kravikat_smth">Something else</p>
+					</div>
 				</div>
 			</div>
 		</div>
+
+			</div>
+<!-- Editing file for JS functions DO NOT CHANGE -->
+			<div id="for-append" class="col-xs-9 bg-success">
+					<div id="div-img">
+						<img id="img" src="">
+						<h4></h4>
+						<p id="superP"></p>
+					</div>
+					<div id="to-append">
+					</div>
+				</div>
+		</div>
 	</div>
 
+
+
+
+
+
+
+
+
+
 	
-<!-- jQuery link -->
+<!-- jQuery links -->
 <script type="text/javascript" src="jQuery/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="jQuery/underscore-min.js"></script>
+<script type="text/javascript" src="jQuery/backbone-min.js"></script>
 <!-- js bootstrap link -->
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/myJS/javaScript.js"></script>
 </body>
 </html>
 
+<!--
+  	<ul class="list-group">
+		<li id="alkiokim" class="list-group-item">Kimmo Alkio</li>
+		<li id="dahlshak" class="list-group-item">Håkan Dahlström</li>
+		<li id="heinolas" class="list-group-item">Lasse Heinonen</li>
+		<li id="johanper" class="list-group-item">Per Johanson</li>
+		<li id="kravikat" class="list-group-item">Katariina Kravi</li>
+	</ul>
+-->
