@@ -54,6 +54,10 @@ $("#alkiokim").on("click", function() {
 	$("h4").text( persons[0].name);
 	$("#superP").text( persons[0].position);
 	$("#to-append").html(persons[0].html);
+	$(".profile, .cv, .smth").css({
+		"color" : "black",
+		"font-weight" : "normal",
+	});
 });
 
 $("#dahlshak").on("click", function() {
@@ -63,6 +67,10 @@ $("#dahlshak").on("click", function() {
 	$("h4").text( persons[1].name);
 	$("#superP").text( persons[1].position);
 	$("#to-append").html(persons[1].html);
+	$(".profile, .cv, .smth").css({
+		"color" : "black",
+		"font-weight" : "normal",
+	});
 });
 
 $("#heinolas").on("click", function() {
@@ -72,6 +80,10 @@ $("#heinolas").on("click", function() {
 	$("h4").text( persons[2].name);
 	$("#superP").text( persons[2].position);
 	$("#to-append").html(persons[2].html);
+	$(".profile, .cv, .smth").css({
+		"color" : "black",
+		"font-weight" : "normal",
+	});
 });
 
 $("#johanper").on("click", function() {
@@ -81,6 +93,10 @@ $("#johanper").on("click", function() {
 	$("h4").text( persons[3].name);
 	$("#superP").text( persons[3].position);
 	$("#to-append").html(persons[3].html);
+	$(".profile, .cv, .smth").css({
+		"color" : "black",
+		"font-weight" : "normal",
+	});
 });
 
 $("#kravikat").on("click", function() {
@@ -90,6 +106,10 @@ $("#kravikat").on("click", function() {
 	$("h4").text( persons[4].name);
 	$("#superP").text( persons[4].position);
 	$("#to-append").html(persons[4].html);
+	$(".profile, .cv, .smth").css({
+		"color" : "black",
+		"font-weight" : "normal",
+	});
 });
 
 //Secondary buttons
@@ -171,4 +191,55 @@ $("#kravikat_cv").on("click", function() {
 $("#kravikat_smth").on("click", function() {
 	$("#to-append").html(persons[4].smth);
 	$("br").css("line-height", "1.5em");
+});
+
+//Acitity based menu selector
+if ($("#to-append").html() === persons[0].profile || $("#to-append").html() === persons[1].profile || $("#to-append").html() === persons[2].profile || $("#to-append").html() === persons[3].profile || $("#to-append").html() === persons[4].profile) {
+	$(".profile").css("color", "rgb(67, 133, 242)");
+}
+
+//Active clicker
+$(".profile").on("click", function() {
+	$(this).css({
+		"color" : "rgb(67, 133, 242)",
+		"font-weight" : "bold",
+	});
+	$(".cv").css({
+		"color" : "black",
+		"font-weight" : "normal",
+	});
+	$(".smth").css({
+		"color" : "black",
+		"font-weight" : "normal",
+	});
+});
+
+$(".cv").on("click", function() {
+	$(this).css({
+		"color" : "rgb(67, 133, 242)",
+		"font-weight" : "bold",
+	});
+	$(".profile").css({
+		"color" : "black",
+		"font-weight" : "normal",
+	});
+	$(".smth").css({
+		"color" : "black",
+		"font-weight" : "normal",
+	});
+});
+
+$(".smth").on("click", function() {
+	$(this).css({
+		"color" : "rgb(67, 133, 242)",
+		"font-weight" : "bold",
+	});
+	$(".cv").css({
+		"color" : "black",
+		"font-weight" : "normal",
+	});
+	$(".profile").css({
+		"color" : "black",
+		"font-weight" : "normal",
+	});
 });
